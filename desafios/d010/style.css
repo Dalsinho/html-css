@@ -98,13 +98,16 @@ section#sec_historia {
 }
 
 section > h2 {
-    background-image: linear-gradient(to right, #84e1ac70, white);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
     padding: 2px;
     padding-left: 5px;
+    font-size: 1.3em;
 }
 
 section > p {
     text-align: justify;
+    text-indent: 30px;
+    line-height: 1.7em;
 }
 
 section > p > a {
@@ -126,7 +129,7 @@ img {
 }
 
 img#bugdroid {
-    width: 40%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
