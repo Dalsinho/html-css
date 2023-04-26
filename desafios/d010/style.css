@@ -118,8 +118,13 @@ section > p > a {
 
 section > p > a.destaque {
     padding: 2px;
-    background-image: linear-gradient(to right, #61c48898, #86dfb096);
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
 }
+
+a.destaque::after {
+    content: '\00A0\1F517';
+}
+
 section > p > a:hover {
     text-decoration: underline;
 }
@@ -153,6 +158,7 @@ section#sec_versoes > h3 {
     padding: 10px;
     margin: 0px;
     border-radius: 10px 10px 0px 0px ;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
 }
 
 section#sec_versoes > #versoes { 
@@ -160,6 +166,7 @@ section#sec_versoes > #versoes {
     background-color: var(--cor0);
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
 }
 
 section#sec_versoes > #versoes > p {
