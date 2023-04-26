@@ -34,13 +34,25 @@ body {
 header {
     font-weight: normal;
     color: white;
-    background-image: linear-gradient(to top, #195734, #3CD983);
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
     padding: 20px;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.493);
+    min-height: 150px;
 }
 
 header > h1 {
     font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin: 0px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+header > p {
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
 }
 
 header > h1, p{
@@ -52,11 +64,13 @@ nav > a {
     font-weight: bold;
     color: white;
     padding: 10px;
+    transition-duration: 0.3s;
 
 }
 
 nav > a:hover {
-    background-color: #195332f8;
+    background-color: var(--cor3);
+    color: var(--cor5);
     border-radius: 5px;
     text-decoration: underline;
 }
@@ -66,13 +80,16 @@ nav > a:hover {
 /* MAIN -------------------------------------------------------- */
 
 main {
-    margin: 0px 500px;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.486);
+
+    min-width: 300px;
+    max-width: 850px;
+    margin: auto;
 }
 
 section > h1, h2 {
     font-family: var(--fonte-android);
-    color: #2F6B4A;
+    color: var(--cor4);
 }
 
 section#sec_historia {
@@ -92,7 +109,7 @@ section > p {
 
 section > p > a {
     text-decoration: none;
-    color: #2F6B4A;
+    color: var(--cor4);
     font-weight: bolder;
 }
 
@@ -104,17 +121,18 @@ section > p > a:hover {
     text-decoration: underline;
 }
 
-section#sec_historia > picture {
+img {
+    width: 100%;
+}
+
+img#bugdroid {
+    width: 40%;
+    display: block;
     margin: auto;
 }
 
-section#bugdroid {
-    margin: auto;
-} 
-
-
 section#sec_video {
-    background-color: #1A5C38;
+    background-color: var(--cor5);
 }
 
 section#sec_video > #video{
@@ -128,7 +146,7 @@ section#sec_versoes {
 
 section#sec_versoes > h3 { 
     color: white;
-    background-color: #2FA866;
+    background-color: var(--cor2);
     padding: 10px;
     margin: 0px;
     border-radius: 10px 10px 0px 0px ;
@@ -136,7 +154,7 @@ section#sec_versoes > h3 {
 
 section#sec_versoes > #versoes { 
     margin: 0px;
-    background-color: #C5EBD6;
+    background-color: var(--cor0);
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
 }
